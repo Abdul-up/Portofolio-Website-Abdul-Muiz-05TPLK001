@@ -1,0 +1,250 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    padding: 1rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #161616;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .logo img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 30%;
+    object-fit: cover;
+}
+
+header .logo a {
+    font-size: 2.8rem;
+    color: #b74b4b;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+header .logo a:hover {
+    transform: scale(1.1);
+}
+
+header nav {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav a {
+    font-size: 1.8rem;
+    color: white;
+    transition: 0.3s;
+}
+
+header nav a.active,
+header nav a:hover {
+    color: #b74b4b;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #161616;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        z-index: 999;
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 1rem 2rem;
+        text-align: center;
+        color: white;
+        font-size: 1.8rem;
+        border-bottom: 1px solid #333;
+    }
+}
+
+
+header nav.active {
+    position: absolute;
+    top: 6rem;
+    right: 9%;
+    background: #161616;
+    width: 70%;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem 9%;
+}
+
+.home-img img {
+    width: 30vw;
+    border-radius: 2rem;
+    box-shadow: 0 0 15px rgba(183, 75, 75, 0.8);
+    object-fit: cover;
+}
+
+.home-content {
+    flex: 1;
+}
+
+.home h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.home span {
+    color: #b74b4b;
+}
+
+.home p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: #d3d3d3;
+}
+
+.social-icons a {
+    margin: 0 0.8rem;
+    font-size: 2rem;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #b74b4b;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    border: 0.2rem solid #b74b4b;
+    color: white;
+    border-radius: 3rem;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #b74b4b;
+    color: black;
+}
+
+/* Projects Section */
+.project {
+    padding: 4rem 9%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3.2rem;
+    color: #b74b4b;
+    margin-bottom: 4rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-box {
+    width: 22rem;
+    background-color: #161616;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(183, 75, 75, 0.8);
+}
+
+.project-box img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.project-box:hover img {
+    transform: scale(1.1);
+}
+
+.project-box h3 {
+    font-size: 2rem;
+    color: white;
+    margin: 1.5rem 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 80%;
+    }
+}
