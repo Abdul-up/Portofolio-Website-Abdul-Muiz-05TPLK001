@@ -1,0 +1,74 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    color: #b74b4b;
+    margin-bottom: 40px;
+}
+
+/* Sertifikat List */
+.sertifikat-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.sertifikat-item {
+    background-color: #2e2d2d;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px #b74b4b(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sertifikat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px #b74b4b(0, 0, 0, 0.15);
+}
+
+.sertifikat-link {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+.sertifikat-link:hover {
+    color: #004085;
+}
+
+.sertifikat-name {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #b74b4b;
+}
