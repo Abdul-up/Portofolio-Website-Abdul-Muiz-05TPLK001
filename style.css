@@ -223,11 +223,6 @@ header nav.active {
     transform: scale(1.1);
 }
 
-.project-box h3 {
-    font-size: 2rem;
-    color: white;
-    margin: 1.5rem 0;
-}
 
 /* Media Queries */
 @media (max-width: 768px) {
