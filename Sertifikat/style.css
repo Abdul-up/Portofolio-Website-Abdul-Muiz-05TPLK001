@@ -39,7 +39,7 @@ header .logo {
 }
 
 .sertifikat-item {
-    background-color: #2e2d2d;
+    background-color: #000000;
     border-radius: 8px;
     box-shadow: 0 4px 12px #b74b4b(0, 0, 0, 0.1);
     overflow: hidden;
@@ -47,8 +47,8 @@ header .logo {
 }
 
 .sertifikat-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 18px #b74b4b(0, 0, 0, 0.15);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(183, 75, 75, 0.8);
 }
 
 .sertifikat-link {
