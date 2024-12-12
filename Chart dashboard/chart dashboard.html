@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chart Board</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Tombol Kembali -->
+    <div class="back-button">
+      <a href="../index.html" class="btn-back">← Back</a>
+    </div>
+
+    <h1>Laporan Penjualan Tahunan</h1>
+    <div class="chart-container">
+      <canvas id="salesChart"></canvas>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('salesChart').getContext('2d');
+    const salesChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
+        datasets: [
+          {
+            label: '2022',
+            data: [4017, 6135, 7091, 5841, 5036, 4547, 3467, 3970, 6313, 3595, 9207, 5945],
+            backgroundColor: 'rgba(54, 162, 235, 0.7)',
+          },
+          {
+            label: '2023',
+            data: [2416, 4136, 7935, 8004, 9505, 5026, 6108, 6343, 9404, 9280, 9287, 8689],
+            backgroundColor: 'rgba(255, 99, 132, 0.7)',
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top',
+          },
+          title: {
+            display: true,
+            text: 'Laporan Penjualan Tahunan',
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
