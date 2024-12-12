@@ -1,4 +1,5 @@
-{
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,9 +18,9 @@ body {
 .back-button {
     margin: 10px 0;
     text-align: left;
-  }
+}
   
-  .btn-back {
+.btn-back {
     display: inline-block;
     padding: 10px 15px;
     background-color: #000000;
@@ -28,11 +29,11 @@ body {
     border-radius: 5px;
     font-size: 14px;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .btn-back:hover {
+.btn-back:hover {
     background-color: #333;
-  }
+}
   
 .login-container {
     background: rgb(0, 0, 0);
@@ -67,7 +68,7 @@ h2.brand-name {
 }
 
 .input-group input {
-    width: 100%;
+    width: calc(100% - 30px); /* Membuat lebar sejajar */
     padding: 12px;
     border: 2px solid #ddd;
     border-radius: 8px;
@@ -75,6 +76,7 @@ h2.brand-name {
     color: #2c3e50;
     transition: all 0.3s ease;
     background-color: #f9f9f9;
+    margin: 0 auto; /* Menyelaraskan dengan tombol login */
 }
 
 .input-group input:focus {
@@ -85,8 +87,8 @@ h2.brand-name {
 }
 
 .login-btn {
-    width: 100%;
-    padding: 12px;
+    width: calc(100% - 30px); /* Sejajar dengan kolom input */
+    padding: 10px; /* Ukuran tombol lebih kecil */
     background-color: white;
     color: black;
     border: none;
@@ -95,6 +97,7 @@ h2.brand-name {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 auto;
 }
 
 .login-btn:hover {
