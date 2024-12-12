@@ -3,12 +3,32 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #1e1e2f, #2c2c3a);
+    background: linear-gradient(135deg, #333, #b74b4b);
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+  }
+
+.back-button {
+    margin: 10px 0;
+    text-align: left;
+  }
+  
+  .btn-back {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #b74b4b;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-back:hover {
+    background-color: #333;
   }
   
   /* Container utama */
