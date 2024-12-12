@@ -15,6 +15,26 @@ body {
     overflow: hidden;
 }
 
+.back-button {
+    margin: 10px 0;
+    text-align: left;
+  }
+  
+  .btn-back {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #b74b4b;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-back:hover {
+    background-color: #333;
+  }
+
 .login-container {
     background: white;
     padding: 30px;
