@@ -50,7 +50,7 @@ body {
 
 /* Calculator Styles */
 .calculator {
-    background: #333;
+    background: #000000;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
