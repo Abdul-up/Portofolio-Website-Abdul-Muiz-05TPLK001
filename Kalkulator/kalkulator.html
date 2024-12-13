@@ -1,53 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Sederhana</title>
-    <link rel="stylesheet" href="stylesheet.css">
-</head>
-<body>
+<html>
+  <head>
+    <title>TETRIS SEDERHANA</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
 
-      
-    <main class="container">
-        
-        <!-- Kalkulator -->
-        <div id="calculator" class="calculator">
-             <!-- Tombol Back -->
-        <div class="back-button">
-            <a href="../index.html" class="btn-back">← Back</a>
-        </div>
-            <!-- Layar Hasil -->
-            <div id="result" class="calculator-screen">0</div>
-
-            <!-- Tombol -->
-            <div class="calculator-keys">
-                <!-- Baris 1 -->
-                <button id="reset" class="btn control">AC</button>
-                <button id="symbol2" value="%" class="btn control">%</button>
-                <button id="symbol" value="÷" class="btn operator">÷</button>
-                <button id="symbol" value="×" class="btn operator">×</button>
-                <!-- Baris 2 -->
-                <button id="number" value="7" class="btn number">7</button>
-                <button id="number" value="8" class="btn number">8</button>
-                <button id="number" value="9" class="btn number">9</button>
-                <button id="symbol" value="−" class="btn operator">−</button>
-                <!-- Baris 3 -->
-                <button id="number" value="4" class="btn number">4</button>
-                <button id="number" value="5" class="btn number">5</button>
-                <button id="number" value="6" class="btn number">6</button>
-                <button id="symbol" value="+" class="btn operator">+</button>
-                <!-- Baris 4 -->
-                <button id="number" value="1" class="btn number">1</button>
-                <button id="number" value="2" class="btn number">2</button>
-                <button id="number" value="3" class="btn number">3</button>
-                <button id="symbol" value="=" class="btn equal">=</button>
-                <!-- Baris 5 -->
-                <button id="number" value="0" class="btn number span-2">0</button>
-                <button id="number" value="." class="btn number">.</button>
-            </div>
-        </div>
-    </main>
-    <script src="script.js"></script>
-</body>
+    <div id="tetris">
+      <!-- Tombol Back -->
+  <div class="back-button">
+    <a href="../index.html" class="btn-back">← Back</a>
+</div>
+      <div id="info">
+        <div id="next_shape"></div>
+        <p id="level">Level: <span></span></p>
+        <p id="lines">Lines: <span></span></p>
+        <p id="score">Score: <span></span></p>
+        <p id="time">Time: <span></span></p>
+        <button id="start">Start</button>
+        <p class="red">Press the Esc button to pause<span></span></p>
+      </div>
+      <div id="canvas"></div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
