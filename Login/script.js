@@ -1,6 +1,6 @@
 // Simulasi data login (username dan password)
-const validUsername = "karyawan";
-const validPassword = "kacamata123";
+const validUsername = "admin";
+const validPassword = "admin123";
 
 // Ambil elemen dari DOM
 const loginForm = document.getElementById("loginForm");
