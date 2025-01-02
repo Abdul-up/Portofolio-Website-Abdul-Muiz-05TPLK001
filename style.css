@@ -222,6 +222,61 @@ header nav.active {
 .project-box:hover img {
     transform: scale(1.1);
 }
+.contact {
+    padding: 4rem 9%;
+    text-align: center;
+    background-color: #161616;
+    color: white;
+}
+
+.contact .section-title {
+    font-size: 3.2rem;
+    color: #b74b4b;
+    margin-bottom: 2rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Form Kontak */
+.contact-form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #444;
+    background-color: #161616;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #bbb;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #b74b4b;
+    outline: none;
+}
+
+.contact-form button {
+    align-self: flex-start;
+}
 
 
 /* Media Queries */
